@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+ * {
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: 'Roboto', sans-serif;
+	 background: #f2f5fa;
+}
+ #sideMenu {
+	 background: #2c293f;
+	 width: 240px;
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 transition: 1s;
+}
+ nav a {
+	 display: block;
+	 padding: 15px;
+	 border-left: 5px solid transparent;
+	 color: #e7eaf4;
+	 transition: all 1s;
+}
+ nav a.active {
+	 background: #252234;
+	 border-left: 5px solid #6eb81b;
+}
+ nav a:hover {
+	 background: #252234;
+	 border-left: 5px solid #6eb81b;
+	 text-decoration: none;
+	 color: #e7eaf4;
+}
+ nav a .fa {
+	 color: #6eb81b;
+	 width: 30px;
+}
+ header {
+	 background: #fff;
+	 padding: 10px;
+	 margin-left: 240px;
+}
+ header .search-area {
+	 display: inline-block;
+}
+ header .search-area .fa {
+	 color: #e7eaf4;
+}
+ header .search-area input[type="text"] {
+	 background: transparent;
+	 border: none;
+	 color: #6eb81b;
+	 padding: 8px 10px;
+}
+ header .search-area input[type="text"]:hover {
+	 background: #f2f5fa;
+}
+ header .user-area {
+	 display: inline-block;
+	 float: right;
+	 padding: 8px;
+}
+ header .user-area a {
+	 display: inline-block;
+	 padding-right: 20px;
+	 color: #aaa;
+}
+ header .user-area a:hover {
+	 text-decoration: none;
+}
+ header .user-area a.notification {
+	 position: relative;
+}
+ header .user-area a.notification .circle {
+	 background: #6eb81b;
+	 color: #f2f5fa;
+	 width: 12px;
+	 height: 12px;
+	 display: inline-block;
+	 border-radius: 50%;
+	 font-size: 9px;
+	 text-align: center;
+	 position: absolute;
+	 top: -5px;
+	 left: 5px;
+}
+ 

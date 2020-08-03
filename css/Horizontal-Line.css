@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.hr-theme-slash-2 {
+	 display: flex;
+}
+ .hr-theme-slash-2 .hr-line {
+	 width: 100%;
+	 position: relative;
+	 margin: 15px;
+	 border-bottom: 1px solid #000;
+}
+ .hr-theme-slash-2 .hr-icon {
+	 position: relative;
+	 top: 3px;
+	 color: black;
+}
+ 

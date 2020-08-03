@@ -1,0 +1,195 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    transition: all 0.24s;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+body {
+    background-color: #f5f5f5;
+}
+.hidden {
+    display: none !important;
+}
+.hidden-2 {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.92);
+    transform-origin: left center;
+}
+#date-picker-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 80vh;
+}
+#date-picker-container {
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    max-width: 500px;
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.20), 30px 30px 50px 0 rgba(0, 0, 0, 0.06);
+}
+#date-picker-title {
+    font-family: 'Coda', serif;
+    margin-bottom: 25px;
+}
+#date-picker-dates {
+    background: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 30px;
+    user-select: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.date-picker-date {
+    position: relative;
+    display: inline-block;
+    background: white;
+    padding: 10px 15px;
+    padding-right: 50px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15), 3px 3px 5px 0 rgba(0, 0, 0, 0.06);
+    transition: none;
+}
+.date-picker-date:hover, .date-picker-date.active {
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2), 3px 3px 5px 0 rgba(0, 0, 0, 0.15);
+}
+.date-picker-date.active {
+    font-weight: bold;
+}
+.date-picker-date:after {
+    position: absolute;
+    display: block;
+    height: 24px;
+    width: 24px;
+    top: 10px;
+    right: 10px;
+    content: "";
+    background: url("https://image.freepik.com/free-icon/calendar-icon-in-black_318-9776.jpg");
+    background-repeat: no-repeat;
+    background-size: 24px;
+}
+#date-picker-display-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.date-picker-display-pair {
+    margin: 10px;
+}
+.date-picker-display {
+    font-family: 'Coda', serif;
+    font-size: 40px;
+}
+.date-picker-display-label {
+    text-align: center;
+    font-size: 0.8rem;
+    position: relative;
+    top: -8px;
+    text-transform: uppercase;
+}
+#date-picker-modal {
+    width: 310px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.30), 30px 30px 40px 0 rgba(0, 0, 0, 0.20);
+    padding: 15px;
+    position: absolute;
+    overflow: hidden;
+    user-select: none;
+    transition: transform 0.1s;
+    background: white;
+}
+#date-picker-modal:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -5px;
+    right: -5px;
+    height: 96px;
+    background: #1ae094;
+    content: '';
+}
+#date-picker-top-bar {
+    position: relative;
+    color: #666;
+    background: white;
+    width: 195px;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.date-picker-change-month {
+    font-size: 23px;
+    line-height: 23px;
+    padding: 0 10px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+}
+.date-picker-change-month:hover {
+    background: #f5f5f5;
+}
+#date-picker-previous-month {
+    left: 5px;
+}
+#date-picker-next-month {
+    right: 5px;
+}
+#date-picker-month {
+    margin: 0 20px;
+}
+#date-picker-exit {
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    padding: 0 10px;
+    font-size: 23px;
+    cursor: pointer;
+    color: white;
+}
+#date-picker-exit:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+#date-picker {
+    width: 280px;
+    table-layout: fixed;
+    position: relative;
+}
+#date-picker th, #date-picker td {
+    text-align: center;
+}
+#date-picker th {
+    cursor: default;
+    border-radius: 0;
+    height: 50px;
+    border-color: #1ae094;
+}
+#date-picker td {
+    cursor: pointer;
+    color: #666;
+    border-radius: 50%;
+    height: 38px;
+}
+#date-picker td:hover {
+    background: #eee;
+}
+#date-picker td.active {
+    background: #1ae094;
+    color: white;
+}
+#date-picker td.previous-month, #date-picker td.next-month {
+    color: #bbb;
+}
+#date-picker-weekdays {
+    color: white;
+}
